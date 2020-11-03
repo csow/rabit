@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+.table-wrapper {
+    width: 700px;
+    margin: 0 auto;
+}

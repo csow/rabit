@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Advertisement{% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center">Advertisements list</h1>
+    <div class="table-wrapper">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Advertisement</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for advertisement in advertisements %}
+                <tr>
+                    <td>{{ advertisement.title }}</td>
+                    <td>{{ advertisement.name}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
